@@ -3,12 +3,13 @@ package ecommerce.business;
 import ecommerce.data.CustomerDB;
 import ecommerce.data.ProductDB;
 import jakarta.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 import java.sql.Timestamp;
 
 @Entity
 @Table(name = "bill", schema = "ecommerce")
-public class BillEntity {
+public class BillEntity implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "BILLID")
