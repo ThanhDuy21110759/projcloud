@@ -1,12 +1,13 @@
 package ecommerce.business;
 
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 import java.util.List;
 
 @Entity
 @Table(name = "cart", schema = "ecommerce")
-public class CartEntity {
+public class CartEntity implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "CARTID")
