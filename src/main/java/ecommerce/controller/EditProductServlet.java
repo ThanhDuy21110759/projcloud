@@ -96,7 +96,7 @@ public class EditProductServlet extends HttpServlet {
             newPro.setShop(ShopDB.getShopByManagerID(user.getCustomerid()));
             newPro.setProducttotalselling(0);
             newPro.setProductavgrating(2);
-            if(fileName != null) newPro.setProductimg(realPath);
+            if(realPath != null) newPro.setProductimg(realPath);
 
             ProductDB.insert(newPro);
 
