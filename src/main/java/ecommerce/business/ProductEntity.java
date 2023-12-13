@@ -9,11 +9,12 @@ import java.util.*;
 import java.nio.file.*;
 import java.io.IOException;
 import java.util.Base64;
+import java.io.Serializable;
 
 
 @Entity
 @Table(name = "product", schema = "ecommerce")
-public class ProductEntity {
+public class ProductEntity implements Serializable{
     private static final Object lock = new Object();
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
