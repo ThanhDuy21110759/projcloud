@@ -79,6 +79,11 @@
             <artifactId>google-api-client</artifactId>
             <version>1.31.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.googlecode.objectify</groupId>
+            <artifactId>objectify</artifactId>
+            <version>6.0</version>
+        </dependency>
 
         <!-- javax jstl dependency-->
         <dependency>
